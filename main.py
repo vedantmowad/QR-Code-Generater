@@ -23,5 +23,5 @@ if st.button("Generate QR Code"):
     qr.add_data(data)
     qr.make(fit=True)
     img = qr.make_image(fill_color="black", back_color="white")
-    img.save(f"{name}.png")
-    st.image(f"{name}.png", caption="Generated QR Code")
+    img.save(f"images/{name}.png")
+    st.image(f"images/{name}.png", caption="Generated QR Code")
